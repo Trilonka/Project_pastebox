@@ -7,7 +7,7 @@ import ru.trilonka.pastebox.api.request.PasteboxRequest;
 import ru.trilonka.pastebox.api.response.PasteboxResponse;
 import ru.trilonka.pastebox.api.response.PasteboxUrlResponse;
 import ru.trilonka.pastebox.model.PasteboxEntity;
-import ru.trilonka.pastebox.repository.PasteboxRepositoryMap;
+import ru.trilonka.pastebox.repository.PasteboxRepository;
 import ru.trilonka.pastebox.util.PublicStatus;
 
 import java.time.LocalDateTime;
@@ -25,7 +25,7 @@ public class PasteboxServiceImpl implements PasteboxService {
     @Value("${app.public_list_size}")
     private int publicListSize;
 
-    private final PasteboxRepositoryMap pasteboxRepository;
+    private final PasteboxRepository pasteboxRepository;
     private final AtomicInteger idGenerator = new AtomicInteger(1);
 
     @Override
