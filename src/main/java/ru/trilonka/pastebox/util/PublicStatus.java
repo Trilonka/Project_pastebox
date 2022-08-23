@@ -1,4 +1,4 @@
-package ru.trilonka.pastebox.api.request;
+package ru.trilonka.pastebox.util;
 
 public enum PublicStatus {
 
